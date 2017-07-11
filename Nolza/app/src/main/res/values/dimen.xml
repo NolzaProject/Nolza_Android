@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text dimen -->
+    <dimen name="textsize_medium">20sp</dimen>
+    <dimen name="textsize_large">24sp</dimen>
+    <dimen name="textsize_max">50sp</dimen>
+
+    <!-- Toolbar dimen -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_margin">5dp</dimen>
+    <dimen name="toolbar_textsize">17sp</dimen>
+    <dimen name="toolbar_medium">@dimen/textsize_medium</dimen>
+
+    <dimen name="main_theme_mission_width">100dp</dimen>
+    <dimen name="main_theme_mission_height">100dp</dimen>
+    <dimen name="main_mission_width">100dp</dimen>
+    <dimen name="main_mission_height">100dp</dimen>
+
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="btn_width">2dp</dimen>
+    <dimen name="btn_radius">30dp</dimen>
+
+    <dimen name="btn_content_left_padding">40dp</dimen>
+    <dimen name="btn_margin_bottom">20dp</dimen>
+
+
+</resources>

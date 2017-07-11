@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">Nolza</string>
+
+    <!-- Main Activity text -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_history">History</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Main Fragment text -->
+    <string name="main_theme_text">Theme</string>
+    <string name="main_theme_mission">Korean food</string>
+    <string name="main_missions">Missions</string>
+
+    <!-- Toolbar text -->
+    <string name="toolbar_next">Next</string>
+
+    <!-- Join Activity text -->
+    <string name="join_main_msg">Join us</string>
+    <string name="join_sub_msg">Welcome aboard</string>
+    <string name="edit_hint_name">Name</string>
+    <string name="edit_hint_email">Email</string>
+    <string name="edit_hint_password">Password</string>
+
+    <!-- Select Language Activity text -->
+    <string name="select_lang_msg">Select language!</string>
+    <string name="select_lang_english">English</string>
+    <string name="select_lang_chinese">中國語</string>
+    <string name="select_lang_japanese">日本語</string>
+    <string name="select_lang_norway">norsk</string>
+    <string name="select_lang_germany">das Deutsche</string>
+    <string name="select_lang_russia">русский</string>
+    <string name="start">START</string>
+
+
+
 </resources>
