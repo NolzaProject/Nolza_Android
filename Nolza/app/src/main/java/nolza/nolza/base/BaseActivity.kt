@@ -15,6 +15,7 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initLayout()
+        window.setBackgroundDrawable(null)
     }
 
     abstract fun initLayout()

@@ -1,112 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:orientation="vertical"
-    android:padding="30dp">
+    android:background="@color/colorPrimary">
 
     <TextView
         android:id="@+id/txtvTitle"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
         android:text="@string/select_lang_msg"
         android:textAppearance="@style/Text_Large_Bold"
-        android:textColor="@color/white" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/btnOk"
-        android:layout_below="@id/txtvTitle"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/btnEnglish"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_height"
-            android:layout_marginBottom="@dimen/btn_margin_bottom"
-            android:background="@drawable/rad_30_border_white"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="@dimen/btn_content_left_padding"
-            android:text="@string/select_lang_english"
-            android:textAppearance="@style/Text_Medium"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:id="@+id/btnChinese"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_height"
-            android:layout_marginBottom="@dimen/btn_margin_bottom"
-            android:background="@drawable/rad_30_border_white"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="@dimen/btn_content_left_padding"
-            android:text="@string/select_lang_chinese"
-            android:textAppearance="@style/Text_Medium"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:id="@+id/btnJapanese"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_height"
-            android:layout_marginBottom="@dimen/btn_margin_bottom"
-            android:background="@drawable/rad_30_border_white"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="@dimen/btn_content_left_padding"
-            android:text="@string/select_lang_japanese"
-            android:textAppearance="@style/Text_Medium"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:id="@+id/btnNorway"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_height"
-            android:layout_marginBottom="@dimen/btn_margin_bottom"
-            android:background="@drawable/rad_30_border_white"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="@dimen/btn_content_left_padding"
-            android:text="@string/select_lang_norway"
-            android:textAppearance="@style/Text_Medium"
-            android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
 
-        <TextView
-            android:id="@+id/btnGermany"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_height"
-            android:layout_marginBottom="@dimen/btn_margin_bottom"
-            android:background="@drawable/rad_30_border_white"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="@dimen/btn_content_left_padding"
-            android:text="@string/select_lang_germany"
-            android:textAppearance="@style/Text_Medium"
-            android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/btnEnglish"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rad_30_border_white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/btn_content_left_padding"
+        android:text="@string/select_lang_english"
+        android:textAppearance="@style/Text_Medium"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvTitle" />
+
+    <TextView
+        android:id="@+id/btnChinese"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rad_30_border_white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/btn_content_left_padding"
+        android:text="@string/select_lang_chinese"
+        android:textAppearance="@style/Text_Medium"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnglish" />
 
 
-        <TextView
-            android:id="@+id/btnRussia"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_height"
-            android:layout_marginBottom="@dimen/btn_margin_bottom"
-            android:background="@drawable/rad_30_border_white"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="@dimen/btn_content_left_padding"
-            android:text="@string/select_lang_russia"
-            android:textAppearance="@style/Text_Medium"
-            android:textColor="@color/white" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/btnJapanese"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rad_30_border_white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/btn_content_left_padding"
+        android:text="@string/select_lang_japanese"
+        android:textAppearance="@style/Text_Medium"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChinese" />
+
+
+    <TextView
+        android:id="@+id/btnNorway"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rad_30_border_white"
+        android:gravity="fill_vertical"
+        android:paddingStart="@dimen/btn_content_left_padding"
+        android:text="@string/select_lang_norway"
+        android:textAppearance="@style/Text_Medium"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJapanese" />
+
+
+    <TextView
+        android:id="@+id/btnGermany"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rad_30_border_white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/btn_content_left_padding"
+        android:text="@string/select_lang_germany"
+        android:textAppearance="@style/Text_Medium"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNorway" />
+
+    <TextView
+        android:id="@+id/btnRussia"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rad_30_border_white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/btn_content_left_padding"
+        android:text="@string/select_lang_russia"
+        android:textAppearance="@style/Text_Medium"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGermany" />
 
     <TextView
         android:id="@+id/btnOk"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/btn_height"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
         android:background="@drawable/rad_30_bg_white"
         android:gravity="center"
         android:text="@string/start"
         android:textAppearance="@style/Text_Medium_Bold"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -7,6 +7,7 @@ import android.os.Parcelable
  * Created by choijinjoo on 2017. 6. 26..
  */
 data class Mission(var id: Int, var name: String) : Parcelable {
+
     companion object {
         @JvmField val CREATOR: Parcelable.Creator<Mission> = object : Parcelable.Creator<Mission> {
             override fun createFromParcel(source: Parcel): Mission = Mission(source)
